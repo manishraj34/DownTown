@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import Accordion from './component/Accordion';
+import Home from './component/Home';
+import Last from './component/Last';
+import Navbar from './component/Navbar';
+import Property from './component/Property';
+import Services from './component/Services';
+import Work from './component/Work';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Home/>
+      <Property/>
+      <Services/>
+      <Work />
+      {/* <Accordion/> */}
+      <Last/>
+      
+    </>
   );
 }
 
